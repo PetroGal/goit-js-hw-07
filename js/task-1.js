@@ -8,3 +8,13 @@
 // Кількість категорій, їх назва та кількість елементів отримані за допомогою властивостей і методів DOM-елементів
 // Дані за кожною категорією були отримані й виведені в консоль у тілі циклу або методу forEach()
 // У консолі має бути виведено наступне повідомлення:
+
+const categoriesNumberEl = document.querySelector('#categories');
+console.log(`Number of categories: ${categoriesNumberEl.children.length}`);
+
+const categoryItemsEl = document.querySelectorAll('.item');
+
+categoryItemsEl.forEach(item => {
+  console.log(`Category: ${item.firstElementChild.textContent}`);
+  console.log(`Elements: ${item.lastElementChild.childElementCount}`);
+});
