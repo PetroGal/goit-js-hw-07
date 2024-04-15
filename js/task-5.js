@@ -10,7 +10,7 @@
 // При кожному кліку на елемент button.change-color фон <body> зафарбовується новим рандомним кольором
 // На <body> і span.color значення одного й того самого кольору
 
-const onClickBtnEl = document.querySelector('.change-color');
+const onClickBtnEl = document.querySelector('.change-color-btn');
 const bodyEl = document.querySelector('body');
 
 const changeColor = event => {

@@ -22,7 +22,11 @@ const onFormSubmit = event => {
 
   const formEl = event.currentTarget.elements;
 
-  if (formEl.email.value.length === 0 || formEl.password.value.length === 0) {
+  if (
+    formEl.email.value.length === 0 ||
+    formEl.password.value.length === 0 ||
+    formEl.password.value.trim() === ''
+  ) {
     alert('All form fields must be filled in');
     return;
   }
